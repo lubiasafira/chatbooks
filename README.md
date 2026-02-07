@@ -1,0 +1,75 @@
+# ChatBooks - Bot do Telegram
+
+Bot do Telegram que recomenda livros sobre qualquer assunto usando inteligência artificial (Claude - Anthropic).
+
+## Requisitos
+
+- Node.js 18+
+- Conta no Telegram com bot criado via [@BotFather](https://t.me/BotFather)
+- Chave de API do Anthropic
+
+## Instalação
+
+1. Clone o repositório:
+```bash
+git clone <url-do-repositorio>
+cd chatbooks
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Configure as variáveis de ambiente criando um arquivo `.env`:
+```env
+ANTHROPICAI_API_KEY=sua-chave-anthropic
+TELEGRAM_BOT_API_KEY=sua-chave-telegram
+```
+
+4. Inicie o bot:
+```bash
+npm start
+```
+
+## Como usar
+
+### Comandos
+
+| Comando | Descrição |
+|---------|-----------|
+| `/start` | Inicia o bot e exibe mensagem de boas-vindas |
+| `/help` | Exibe ajuda e lista de comandos |
+
+### Pedindo recomendações
+
+Envie uma mensagem com o assunto desejado:
+
+- **Assunto direto:** "Biologia", "Filosofia", "Programação"
+- **Pedido completo:** "Me recomende livros sobre história"
+- **Formato alternativo:** "Livros de economia"
+
+O bot responderá com 3-5 recomendações de livros no formato:
+```
+1. **Nome do Livro** - Breve descrição
+2. **Nome do Livro** - Breve descrição
+...
+```
+
+## Estrutura do projeto
+
+```
+chatbooks/
+├── bot.js          # Código principal do bot
+├── test-api.js     # Testes de depuração da API
+├── package.json    # Dependências do projeto
+├── .env            # Variáveis de ambiente (não versionado)
+├── .gitignore      # Arquivos ignorados pelo git
+└── README.md       # Este arquivo
+```
+
+## Tecnologias
+
+- [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) - API do Telegram
+- [@anthropic-ai/sdk](https://github.com/anthropics/anthropic-sdk-js) - SDK do Claude (Anthropic)
+- [dotenv](https://github.com/motdotla/dotenv) - Gerenciamento de variáveis de ambiente
