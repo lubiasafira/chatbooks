@@ -68,6 +68,24 @@ chatbooks/
 └── README.md       # Este arquivo
 ```
 
+## Deploy no Railway
+
+1. Faça fork ou suba este repositório no GitHub
+
+2. Acesse [railway.app](https://railway.app) e faça login com GitHub
+
+3. Clique em **New Project** → **Deploy from GitHub repo**
+
+4. Selecione o repositório `chatbooks`
+
+5. Adicione as variáveis de ambiente em **Variables**:
+   - `ANTHROPICAI_API_KEY` = sua chave do Anthropic
+   - `TELEGRAM_BOT_API_KEY` = sua chave do Telegram
+
+6. O deploy será feito automaticamente
+
+7. Verifique os logs em **Deployments** para confirmar que o bot iniciou
+
 ## Tecnologias
 
 - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) - API do Telegram

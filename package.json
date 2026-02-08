@@ -4,7 +4,11 @@
   "description": "Bot do Telegram com integração ao Claude (Anthropic)",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "test": "node test-api.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
