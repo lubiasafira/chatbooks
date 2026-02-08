@@ -24,6 +24,7 @@ REGRAS IMPORTANTES:
 1. Você pode recomendar livros e fornecer resumos. Não responda perguntas sobre outros assuntos.
 2. Se o usuário pedir algo que não seja recomendação ou resumo de livros, responda educadamente que você só pode recomendar livros e fazer resumos.
 3. Aceite pedidos como: "me recomende livros sobre X", "livros de X", apenas o nome do assunto como "Biologia", "História", etc.
+4. Aceite pedidos por autor como: "livros do Machado de Assis", "livros de Stephen King", "me recomende livros do autor X".
 
 FORMATO PARA RECOMENDAÇÕES:
 - Liste os livros assim (com link para pesquisa no Google):
@@ -63,6 +64,7 @@ Eu sou um bot especializado em *recomendar livros* e *fazer resumos* sobre qualq
 
 *Como me usar:*
 • Envie o nome de um assunto (ex: "Filosofia", "Programação")
+• Peça livros por autor (ex: "livros do Machado de Assis")
 • Peça um resumo pelo número (ex: "resumo do 2")
 • Ou cite o livro diretamente (ex: "resumo de 1984 - George Orwell")
 
@@ -86,7 +88,8 @@ bot.onText(/\/help/, (msg) => {
 • /help - Mostrar esta mensagem de ajuda
 
 *Como pedir recomendações:*
-• Digite apenas o assunto: "Biologia", "Romance", "Ficção científica"
+• Por assunto: "Biologia", "Romance", "Ficção científica"
+• Por autor: "livros do Machado de Assis", "livros de Stephen King"
 • Ou peça diretamente: "Me recomende livros sobre economia"
 
 *Como pedir resumos:*
@@ -96,8 +99,8 @@ bot.onText(/\/help/, (msg) => {
 
 *Exemplos:*
 • "Psicologia"
+• "Livros do Machado de Assis"
 • "Resumo do 2"
-• "Resumo de O Pequeno Príncipe - Antoine de Saint-Exupéry"
 
 _Envie um assunto e receba recomendações! 📚_`;
 

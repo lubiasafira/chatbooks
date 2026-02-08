@@ -43,11 +43,11 @@ npm start
 
 ### Pedindo recomendações
 
-Envie uma mensagem com o assunto desejado:
+Envie uma mensagem com o assunto ou autor desejado:
 
-- **Assunto direto:** "Biologia", "Filosofia", "Programação"
+- **Por assunto:** "Biologia", "Filosofia", "Programação"
+- **Por autor:** "livros do Machado de Assis", "livros de Stephen King"
 - **Pedido completo:** "Me recomende livros sobre história"
-- **Formato alternativo:** "Livros de economia"
 
 O bot responderá com 3-5 recomendações de livros no formato:
 ```

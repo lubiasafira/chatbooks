@@ -53,3 +53,7 @@ adições:
 4. O usuário pode solicitar um resumo de algum livro recomandado lista pelo número ou nome do livro.
 
 5. Deixe os os nome do `livro` por `autor` o com um link direto para uma pesquisa do google.
+
+## prompt 8
+modificação:
+1. permita que o usuário peça recomandações de livro por autor.
