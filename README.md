@@ -1,6 +1,6 @@
 # ChatBooks - Bot do Telegram
 
-Bot do Telegram que recomenda livros sobre qualquer assunto usando inteligência artificial (Claude - Anthropic).
+Bot do Telegram que recomenda livros e fornece resumos sobre qualquer assunto usando inteligência artificial (Claude - Anthropic).
 
 ## Requisitos
 
@@ -51,9 +51,29 @@ Envie uma mensagem com o assunto desejado:
 
 O bot responderá com 3-5 recomendações de livros no formato:
 ```
-1. **Nome do Livro** - Breve descrição
-2. **Nome do Livro** - Breve descrição
+1. Nome do Livro por Autor - Breve descrição
+2. Nome do Livro por Autor - Breve descrição
 ...
+```
+
+Cada livro inclui um link direto para pesquisa no Google.
+
+### Pedindo resumos
+
+Após receber recomendações, você pode pedir o resumo de um livro:
+
+- **Pelo número:** "resumo do 2", "quero o resumo do 3"
+- **Pelo nome:** "resumo de Dom Casmurro"
+- **Citando livro e autor:** "resumo de 1984 - George Orwell"
+
+O bot responderá com:
+```
+Nome do Livro por Autor (link)
+
+Breve descrição do livro
+
+Resumo:
+[Resumo detalhado em 3-5 parágrafos]
 ```
 
 ## Estrutura do projeto
