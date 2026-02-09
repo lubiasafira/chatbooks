@@ -109,5 +109,5 @@ chatbooks/
 ## Tecnologias
 
 - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) - API do Telegram
-- [@anthropic-ai/sdk](https://github.com/anthropics/anthropic-sdk-js) - SDK do Claude (Anthropic)
+- [@anthropic-ai/sdk](https://github.com/anthropics/anthropic-sdk-typescript) - SDK do Claude (Anthropic)
 - [dotenv](https://github.com/motdotla/dotenv) - Gerenciamento de variáveis de ambiente
